@@ -38,4 +38,5 @@ public class LoginPage {
         WebElement dashboardPageDisplay = driver.findElement(errorMessage);
         Assertions.assertTrue(dashboardPageDisplay.isDisplayed(), "Dashboard page is not displayed.");
     }
+
 }

@@ -85,4 +85,21 @@ public class LoginTest {
         loginPage.loginToApp("correctUsername", "IncorrectPassword");
         loginPage.displayErrorMessage();
     }
+
+    @Test
+    public void verifyingLinkedinIcon(){
+        driver.findElement(loginPage.linkedInIcon).click();
+        String originalWindow = driver.getWindowHandle();
+        for(String windowHandle: driver.getWindowHandles()){
+            if(!windowHandle.equals(originalWindow)){
+                driver.switchTo().window(windowHandle);
+                break;
+            }
+        }
+
+
+        // Verify the URL of the new tab
+        String currentURL = driver.getCurrentUrl();
+        Assertions.assertTrue(currentURL.contains("linked.com"), "URL does not contain linkedin.com");
+    }
 }

@@ -22,8 +22,8 @@ public class LoginPage {
     public By errorMessage = By.xpath("//div[@class='oxd-alert-content oxd-alert-content--error']");
     public By forgotPasswordText = By.xpath("//p[@class='oxd-text oxd-text--p orangehrm-login-forgot-header']");
     public By linkedInIcon = By.xpath("//a[@href='https://www.linkedin.com/company/orangehrm/mycompany/']");
-    public By facebookIcon = By.xpath("//a[@href='https://www.facebook.com/OrangeHRM/']");
-    public By twitterIcon = By.xpath("//a[@href='https://twitter.com/orangehrm?lang=en']");
+    public By facebookIcon = By.xpath("//a[@href='https://www.facebook.com/OrangeHRM/']//*[name()='svg']");
+    public By twitterIcon = By.xpath("//a[@href='https://twitter.com/orangehrm?lang=en']//*[name()='svg']");
     public By youtubeIcon = By.xpath("//a[@href='https://www.youtube.com/c/OrangeHRMInc']");
     public By linkedText = By.xpath("//a[normalize-space()='OrangeHRM, Inc']");
 

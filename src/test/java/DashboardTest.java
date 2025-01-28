@@ -53,9 +53,10 @@ public class DashboardTest {
         Assertions.assertEquals("Dashboard", dashboardTitle.getText().trim(), "Dashboard title is not displayed.");
     }
 
+    @Test
+    public void verifyingHamburgerButtonFunctionality(){
 
-//    @Test
-//    public void
+    }
 
 
 }

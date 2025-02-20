@@ -17,6 +17,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.time.Duration;
 import java.util.Properties;
+import java.util.Set;
 
 public class LoginTest {
     private WebDriver driver;
@@ -167,6 +168,7 @@ public void verifyingLinkedinIcon() {
     }
 
 
+    /*
     @Test
     public void verifyingTwitterIcon(){
         driver.findElement(loginPage.twitterIcon).click();
@@ -195,6 +197,17 @@ public void verifyingLinkedinIcon() {
 //            driver.close();
 //            driver.switchTo().window(originalWindow);
 
+    }
+
+     */
+
+
+    @Test
+    public void verifyingTwitterIcon(){
+//        driver.getWindowHandle();
+        driver.findElement(loginPage.twitterIcon).click();
+        Set<String> windowHandles = driver.getWindowHandles();
+        System.out.println(windowHandles);
     }
 
 
